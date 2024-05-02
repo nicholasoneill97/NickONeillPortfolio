@@ -1,0 +1,68 @@
+ 
+/*fixes auto-scroll position when clicking nav link*/
+#about {
+    scroll-margin-top: -150px
+}
+
+#projects {
+    scroll-margin-top: -100px
+}
+
+/*media queries for responsiveness*/
+ 
+
+
+@media screen and (max-width:300px) {
+
+    .herotext {
+        font-size:12px
+    }
+
+    .tabs {
+        font-size: 13px
+    }
+     .email {
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+
+    .herotext {
+        font-size:20px
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .herotext {
+        font-size:22px
+    }
+}
+
+@media screen and (max-height:770px) {
+
+    .abouttitle {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:800px) {
+    
+    .herotext {
+        font-size: 25px
+    }
+    .herosection, .aboutsection {
+        margin-bottom: 200px;
+    }
+}
+
+
+@media screen and (max-width:1024px) and (min-width: 920px) {
+
+    .herotext {
+        font-size:45px
+    }
+}
+
