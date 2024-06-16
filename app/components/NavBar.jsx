@@ -44,7 +44,7 @@ const NavBar = () => {
 
   return (
     <nav className="max-w-[100%] fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-20 bg-[#f3efef] bg-opacity-100 nav border-t-0 border-r-0 border-l-0">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2 ">
+      <div className="flex container lg:py-2 flex-wrap items-center justify-between mx-auto px-4 py-2 ">
         <Link
           href={"/"}
           className="text-2xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary"

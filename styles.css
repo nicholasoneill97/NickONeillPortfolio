@@ -1,17 +1,18 @@
  
 /*fixes auto-scroll position when clicking nav link*/
 #about {
-    scroll-margin-top: -150px
+    scroll-margin-top: -193px
 }
 
 #projects {
-    scroll-margin-top: -100px
+    scroll-margin-top: -115px
+}
+
+#contact {
+    scroll-margin-top: -70px
 }
 
 /*media queries for responsiveness*/
- 
-
-
 @media screen and (max-width:300px) {
 
     .herotext {
@@ -58,6 +59,19 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #about {
+        scroll-margin-top: 20px
+    }
+    
+    #projects {
+        scroll-margin-top: 80px
+    }
+    
+    #contact {
+        scroll-margin-top: 0
+    }
+}
 
 @media screen and (max-width:1024px) and (min-width: 920px) {
 

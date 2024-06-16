@@ -69,7 +69,7 @@ const About = () => {
   //initializes tab to be set on "skills" tab
   const [tab, setTab] = useState("skills");
 
-  //intializes transition
+  //initializes transition
   const [isPending, startTransition] = useTransition();
 
   //function that handles transition once a tab is clicked to switch to the id specified on that tab
@@ -98,7 +98,7 @@ const About = () => {
         
         <Image src="/images/bluesetup.jpeg" alt="Animated Computer Setup Image" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-secondary mb-4 abouttitle">
+          <h2 className="text-4xl font-bold text-secondary mb-4 mt-4 abouttitle">
             About Me
           </h2>
           <p className="text-base lg:text-lg text-[#2b2b2c]">
@@ -106,7 +106,7 @@ const About = () => {
             and comfortable UIs. I love tackling complex issues, completing challenging projects, and 
             collaborating with a strong team. Javascript, CSS3, and HTML5 are my core languages.
           </p>
-          <div className="flex flex-row justify-start mt-8 tabs">
+          <div className="flex flex-row justify-start mt-4 tabs border-black border-t-2 border-l-0 border-r-0 border-b-0 py-2">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -129,7 +129,7 @@ const About = () => {
               Experience{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-3">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

@@ -45,8 +45,56 @@ const Projects = () => {
     
       <div className='flex flex-col justify-center items-center'>
    
-   
-        <div className='text-secondary rounded py-3 px-4 lg:mt-12 mt-10 flex lg:flex-row  flex-col-reverse lg:justify-evenly justify-center'>
+      <div className='text-secondary rounded py-3 px-4 mt-10 flex lg:flex-row flex-col lg:justify-evenly justify-center'>
+          <div className='lg:w-[50%] w-full relative top-2'>
+              <h5 className='text-xl font-semibold mb-2 text-center'>
+                Post Up
+              </h5>
+              <p className='text-secondary text-center lg:mr-4 mr-0'>
+                Post Up is a blogging website made with React.js, vanilla CSS, 
+                and Firebase. Post Up allows users to make accounts and create 
+                posts when signed in. When signed in, users can also like and/or 
+                add comments to posts. It features smooth animations and styles made with pure 
+                CSS and also React's Toastify messages to alert users.
+                <br />
+              </p>
+              <p className='text-center font-bold mt-6 lg:mb-0 mb-16 lg:mr-4 mr-0'> 
+                (Note: I have created a Guest Account for employer usage to save the time with making a new one.)
+                <br /> 
+                <span className='text-center'>
+                  Username:
+                  <span className='font-normal'> guest@guest.com</span>
+                  <br />
+                  Password: 
+                  <span className='font-normal'> guest123</span>
+                </span>
+              </p>
+          </div>
+          <div> 
+          
+            <Image  src={require('/public/images/projects/postup.png')} 
+                    className='max-w-full min-w-[245px] max-h-auto w-[600px] lg:h-[300px] h-auto rounded mb-1 hover:border hover:border-white mx-auto lg:mt-0 mt-0' 
+                    alt="Sailor's Paradise Image"
+            />
+        
+            <div className='text-center mt-5'>
+              <Link
+                href='https://post-up-blog.web.app/' target='_blank' title="Click to View Project!"
+                className="px-6 inline-block py-3 rounded-full mr-1 mx-auto bg-primary-800 border-primary-500 hover:bg-primary-400 hover:border-black hover:text-black border  text-white  duration-1000 mb-2 lg:mb-0"
+              >
+                View Demo
+              </Link>
+              <Link
+                href="https://github.com/nicholasoneill97/PostUp-Blog.git" target='_blank' title="Click to View This Project&apos;s code!"
+                className="px-6 inline-block py-3 rounded-full  mx-auto bg-transparent border-primary-500 hover:bg-slate-500 hover:border-black hover:text-white border  text-black  duration-1000"
+              >
+                View Code
+              </Link>
+            </div>
+          </div>
+          <div className='mt-10 w-full lg:hidden border-slate-900  border h-[1px]'></div>
+        </div>
+        <div className='text-secondary rounded py-3 px-4 lg:mt-20 mt-0 flex lg:flex-row  flex-col-reverse lg:justify-evenly justify-center'>
           <div>
             
             <Image  src={require('/public/images/projects/watchflix.png')} 
@@ -74,7 +122,7 @@ const Projects = () => {
               Watchflix
             </h5>
             <p className='text-secondary text-center '>
-              Watchflix is a movie website made with React and TailwindCSS frameworks. 
+              Watchflix is a movie website made with React.js and Tailwind CSS frameworks. 
               Users can sign up for accounts, search movies, and save their favorites to their account once logged in.<br /> 
               In this project I used Firebase for the backend, Axios for the API calls, and much more awesome stuff. <br />
               The API used is from  
@@ -86,12 +134,18 @@ const Projects = () => {
             <p className='text-center font-bold mt-6 lg:mb-0 mb-16'> 
               (Note: I have created a Guest Account for employer usage to save the time with making a new one.)
               <br />
-              <span className='text-center'>Username:<span className='font-normal'> guest@guest.com</span><br /> Password: <span className='font-normal'>guest123</span></span>
+              <span className='text-center'>
+                Username:
+                <span className='font-normal'> guest@guest.com</span>
+                <br /> 
+                Password: 
+                <span className='font-normal'> guest123</span>
+              </span>
             </p>
           </div>
         </div>
         <div className='mt-10 w-full lg:hidden border-slate-900  border h-[1px]'></div>
-        <div className='text-secondary rounded py-3 px-4 lg:mt-36 mt-10 flex lg:flex-row flex-col lg:justify-evenly justify-center'>
+        <div className='text-secondary rounded py-3 px-4 lg:mt-20 mt-0 flex lg:flex-row flex-col lg:justify-evenly justify-center'>
           <div className='lg:w-[50%] w-full relative top-10'>
               <h5 className='text-xl font-semibold mb-2 text-center'>
                 Sailor&apos;s Paradise Restaurant
@@ -101,11 +155,11 @@ const Projects = () => {
                 Me and my girlfriend share a love for cooking and eating great food. We always thought opening a restaurant where 
                 we could share our passions with the world would be a dream come true. <br />
                 <p className='mt-3'>
-                Here is what I imagine our website will look like.<br /> 
+                  Here is what I imagine our website will look like.<br /> 
                 </p>
                 <p className='mt-3'>
-                Sailor&apos;s Paradise Restaurant was made with
-                vanilla Javascript, CSS3, and HTML5.
+                  Sailor&apos;s Paradise Restaurant was made with
+                  vanilla Javascript, CSS3, and HTML5.
                 </p>
               </p>
           </div>
@@ -135,7 +189,7 @@ const Projects = () => {
         </div>
       
       <div className='mt-10 w-full lg:hidden border-slate-900  border h-[1px]'></div>
-      <div className='text-secondary rounded py-3 px-4 lg:mt-36 mt-0 flex lg:flex-row flex-col-reverse lg:justify-evenly justify-center'>
+      <div className='text-secondary rounded py-3 px-4 lg:mt-20 mt-0 flex lg:flex-row flex-col-reverse lg:justify-evenly justify-center'>
           <div>
             
             <Image  src={require('/public/images/projects/definethis.png')} 
@@ -165,7 +219,7 @@ const Projects = () => {
             <p className='text-secondary lg:mb-0 mb-20 '> 
               DefineThis is a website I made that allows you to type any word into the search bar in order to find that word&apos;s definition. <br />
               <p className='mt-3'>
-              I used Axios for the API, React for my framework, and vanilla CSS3 for the styling.<br /> 
+              I used Axios for the API calls, React.js for my framework, and vanilla CSS3 for the styling.<br /> 
               </p>
               <p className='mt-3'>
               The API used is from  
