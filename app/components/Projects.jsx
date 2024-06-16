@@ -55,7 +55,7 @@ const Projects = () => {
                 and Firebase. Post Up allows users to make accounts and create 
                 posts when signed in. When signed in, users can also like and/or 
                 add comments to posts. It features smooth animations and styles made with pure 
-                CSS and also React's Toastify messages to alert users.
+                CSS and also React&apos;s Toastify messages to alert users.
                 <br />
               </p>
               <p className='text-center font-bold mt-6 lg:mb-0 mb-16 lg:mr-4 mr-0'> 
