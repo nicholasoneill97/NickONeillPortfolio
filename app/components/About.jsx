@@ -52,7 +52,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-none pl-2">
         <li className="text-black font-bold">Job Title: <span className="text-secondary font-normal italic">Web Specialist</span></li>
-        <li className="text-black font-bold">Company: <span className="text-secondary font-normal">Swiss Farms (2020-2023)</span></li>
+        <li className="text-black font-bold">Company: <span className="text-secondary font-normal">Swiss Farms (2020-2024)</span></li>
         <li className="text-black font-bold">Description: <span className="text-secondary font-normal">Managed company&apos;s website that was used by customers to 
         create accounts and place orders. Managed and maintained UI and UX in order to maximize customer satisfaction. Investigated bugs or errors found on site and provided solutions. Provided IT support for
         inventory and point of sale technology when needed in order to maximize business efficiency.</span>
